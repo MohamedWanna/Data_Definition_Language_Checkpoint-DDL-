@@ -1,8 +1,7 @@
 CREATE TABLE Product(
     Product_id VARCHAR2(20) CONSTRAINT pk_Product PRIMARY KEY (Product_id),
     Product_name VARCHAR2(20) NOT NULL,
-    Price NUMBER,
-    CONSTRAINT CHK_Person CHECK (Price>0)
+    Price NUMBER CONSTRAINT CHK_Person CHECK (Price>0)
 );
 ALTER TABLE Product ADD Category VARCHAR2(20);
 
